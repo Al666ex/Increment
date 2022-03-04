@@ -24,7 +24,7 @@ const Counter = ({count,inc,  dec,  rnd}) => {
             </div>
             </button>    
             <button onClick={rnd} type="button" className='btn rnd'>
-            <div >Rand+</div>
+            <div >Rand</div>
             </button>    
         </div>
     </>
