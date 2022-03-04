@@ -1,15 +1,10 @@
 //import '../images';
 import React from 'react'
-//import {bindActionCreators} from 'redux';
-import {connect, useSelector, useDispatch} from 'react-redux';
-//import * as actions from '../actions';
+import {useSelector, useDispatch} from 'react-redux';
 import {inc,dec,rnd} from '../actions';
 import plus from '../images/plus.png';
 import minus from '../images/Minus.png';
 
-
-
-//const Counter = ({count,inc,  dec,  rnd}) => {
 const Counter = () => {
     const count = useSelector(state => state);
     const dispatch = useDispatch();
@@ -35,15 +30,4 @@ const Counter = () => {
     )
 }
 
-// const mapStateToProps = state => {
-//     return {
-//         count : state
-//     }
-// }
-
-// const mapDispatchToProps = dispatch => {
-//     return bindActionCreators(actions,dispatch)
-// }
-
-//export default connect(mapStateToProps, actions)(Counter);
 export default Counter;
